@@ -1,0 +1,21 @@
+name: ChronoDossard
+options:
+  bundleIdPrefix: com.stevesinki
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  ChronoDossard:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.stevesinki.chronodossard
+        INFOPLIST_KEY_NSCameraUsageDescription: "Chronométrage optique des dossards sur la ligne d'arrivée."
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: "UIInterfaceOrientationPortrait"
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
